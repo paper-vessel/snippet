@@ -1,0 +1,10 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitexclude
+[alias]
+	lg = log --all --oneline --graph --decorate
+[user]
+	name = jayb
+	email = jayb.ephemeral@icloud.com
+[fetch]
+	prune = yes

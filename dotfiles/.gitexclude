@@ -1,0 +1,11 @@
+# Ignore Mac specific files
+.DS_Store
+
+# Ignore python cache
+*.pyc
+
+# Ignore vim swp
+*.swp
+
+# Ignore virtualevn
+venv
