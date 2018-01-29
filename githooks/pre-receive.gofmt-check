@@ -3,6 +3,7 @@
 hash /snap/bin/gofmt 2>&- || { echo >&2 "gofmt not in PATH."; exit 1; }
 
 while read oldrev newrev refname; do
+    # when pushing new branch. assume that newrev forked from master and master's headrev always formatted
     if [ "$oldrev" -eq 0 ]; then
 		files=`git diff --name-only --diff-filter=ACM refs/heads/master..$newrev | grep '\.go$'`
     else
