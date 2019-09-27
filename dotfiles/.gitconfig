@@ -1,21 +1,10 @@
 [core]
 	editor = vim
-	excludesfile = /Users/jayb/.gitexclude
+	excludesfile = ~/.gitexclude
 [alias]
     lg = log --all --oneline --graph --decorate --format='%C(green)%h %Creset%ad %C(blue)%an %C(red)%d %Creset%s' --date=iso8601
 [user]
 	name = JayB
-	email = jayb.ephemeral@icloud.com
+	email = jayb@dxmcorp.com
 [fetch]
     prune = yes
-
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-
-[commit]
-	template = /Users/jayb/.stCommitMsg
